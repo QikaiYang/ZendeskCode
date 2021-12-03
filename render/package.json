@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "3.0.1",
     "reactjs-popup": "^2.0.5"
   },
@@ -30,5 +30,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0"
   }
 }

@@ -11,11 +11,12 @@ class Api(Resource):
         url = "https://" + base64.b64decode(domain).decode("utf-8")  + ".zendesk.com/api/v2/tickets.json"
         user = base64.b64decode(user).decode("utf-8")
         pwd = base64.b64decode(password).decode("utf-8")
-        print(url, user, pwd)
+       
         response = requests.get(url, auth=(user, pwd))
         result = {"stat":"", "content":""}
         data = response.json()
         result["stat"] = response.status_code
+        print(result["stat"])
         result["content"] = data
         return result
 

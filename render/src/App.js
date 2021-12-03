@@ -45,11 +45,11 @@ const App = () => {
         } catch (err) {
             setPrint(true);
             setFlag(false);
-            setError("Unpected Program error:(");
+            setError("Unexpected Program error:(");
         }
     }
 
-    // Get current posts
+    // Get current tickets
     const indexOfLastTicket = currentPage * ticketsPerPage;
     const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage;
     const currentTickets = tickets.slice(indexOfFirstTicket, indexOfLastTicket);
@@ -68,12 +68,12 @@ const App = () => {
                                 null :
                                 <section>
                                     <h6>Enter your user domain</h6>
-                                    <input type="text" onChange={getDomain} />
+                                    <input placeholder="domain" type="text" onChange={getDomain} />
                                     <h6>Enter your email</h6>
-                                    <input type="text" onChange={getEmail} />
+                                    <input placeholder="email" type="text" onChange={getEmail} />
                                     <h6>Enter your password</h6>
-                                    <input type="text" onChange={getPassword} />
-                                    <button onClick={fetchapi} >Get books!</button>
+                                    <input placeholder="password" type="text" onChange={getPassword} />
+                                    <button onClick={fetchapi} >Go!</button>
                                 </section>
                         }
                         {
