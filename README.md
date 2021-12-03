@@ -46,12 +46,37 @@ Open 2 terminals.
 
 On the 1st terminal, run the command below to turn on the server (**make sure it is not shut down**)
 
+    cd api
     python api.py
 
 On the 2nd terminal, run the command below
 
+    cd render
     npm start
 
 Then the app should pop up in your browser.
 
 ## How To Test My App
+I test my front-end with `@testing-library/react` and my back-end with `Pytest`
+
+### Test front-end
+On the 1st terminal, run the command below to turn on the server (**make sure it is not shut down**)
+
+    cd api
+    python api.py
+
+On the 2nd terminal, run the command below
+
+    cd render
+    yarn test
+
+### Test back-end
+On the 1st terminal, run the command below to turn on the server (**make sure it is not shut down**)
+
+    cd api
+    python api.py
+
+On the 2nd terminal, run the command below
+
+    cd api
+    pytest test.py
