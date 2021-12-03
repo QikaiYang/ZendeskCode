@@ -5,22 +5,25 @@ This is the app that fulfills the requirement of Zendesk Code Challenge.
 ## App Screenshots
 ![Login Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/login.png)
 
-Login Page
+Login page
 
 ![Main Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/main.png)
 
-Main Page
+Main page
 
 ![Incorrect Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/incorrect.png)
 
-Incorrect Information Is Entered
+Incorrect information is entered
 
 ![Error Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/program.png)
 
-Unexpected Program Error (Try type some Chinese characters into the fields - such as 中文)
+Unexpected program error (Try type some Chinese characters into the fields - such as 中文)
 
 ## Author
 Qikai Yang (qikaiy2@illinois.edu)
+
+## References
+Part of this App's code is based on this [link](https://www.youtube.com/watch?v=IYCa1F-OWmk&ab_channel=TraversyMedia)
 
 ## Dependency
 The app is built by React and Python. The front-end is implemented by React and the backend is implmented by Python(Flask)
