@@ -2,7 +2,7 @@
 
 This is the app that fulfills the requirement of Zendesk Code Challenge. 
 
-# App Screenshots
+## App Screenshots
 ![Login Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/login.png)
 
 Login Page
@@ -15,11 +15,13 @@ Main Page
 
 Login Page
 
-![Error Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/error.png)
+![Error Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/program.png)
 
 Main Page
 
 ## Author
 Qikai Yang (qikaiy2@illinois.edu)
 
-## 
+## Dependency
+`node v16.13.0`
+`node v16.13.0`
