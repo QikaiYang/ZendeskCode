@@ -83,3 +83,13 @@ On the 2nd terminal, run the command below
 
     cd api
     pytest test.py
+
+### Screenshots of testing
+
+![Incorrect Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/test_react.png)
+
+Test front-end
+
+![Error Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/test_flask.png)
+
+Test back-end
