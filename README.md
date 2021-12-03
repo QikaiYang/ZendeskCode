@@ -13,15 +13,39 @@ Main Page
 
 ![Incorrect Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/incorrect.png)
 
-Login Page
+Incorrect Information Is Entered
 
 ![Error Page](https://github.com/QikaiYang/ZendeskCode/blob/main/imgs/program.png)
 
-Main Page
+Unexpected Program Error (Try type some Chinese characters into the fields - such as 中文)
 
 ## Author
 Qikai Yang (qikaiy2@illinois.edu)
 
 ## Dependency
+The app is built by React and Python. The front-end is implemented by React and the backend is implmented by Python(Flask)
 `node v16.13.0`
-`node v16.13.0`
+`python 3.8`
+`Flask`
+`Pytest`
+
+## How To Run My App
+### Step 1. clone the repo
+    git clone https://github.com/QikaiYang/ZendeskCode
+    cd ZendeskCode
+
+### Step 2. install dependency
+    pip install flask
+    pip install pytest
+    pip install flask_restful
+    cd render
+    npm install
+
+### Step 3. run my app
+Open 2 terminals. 
+On the 1st terminal, run the command below to turn on the server(make sure it is not shut down)
+    python api.py
+On the 2nd terminal, run the command below
+    npm start
+
+Then the app should pop up in your browser.
