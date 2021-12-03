@@ -1,25 +1,25 @@
 import requests
+from flask import Flask
+from flask_restful import Resource, Api
+import base64
 
-# Set the request parameters
-url = 'https://zccqikaiy2.zendesk.com/api/v2/groups.json'
-user = 'qikaiy2@gmail.com'
-pwd = 'QIkai980221'
+app = Flask(__name__)
+api = Api(app)
 
-# Do the HTTP get request
-response = requests.get(url, auth=(user, pwd))
+class Api(Resource):
+    def get(self, domain, user, password):
+        url = "https://" + base64.b64decode(domain).decode("utf-8")  + ".zendesk.com/api/v2/tickets.json"
+        user = base64.b64decode(user).decode("utf-8")
+        pwd = base64.b64decode(password).decode("utf-8")
+        print(url, user, pwd)
+        response = requests.get(url, auth=(user, pwd))
+        result = {"stat":"", "content":""}
+        data = response.json()
+        result["stat"] = response.status_code
+        result["content"] = data
+        return result
 
-# Check for HTTP codes other than 200
-if response.status_code != 200:
-    print('Status:', response.status_code, 'Problem with the request. Exiting.')
-    exit()
+api.add_resource(Api, '/get_all_tickets/<string:domain>/<string:user>/<string:password>') 
 
-# Decode the JSON response into a dictionary and use the data
-data = response.json()
-
-# Example 1: Print the name of the first group in the list
-print( 'First group = ', data['groups'][0]['name'] )
-
-# Example 2: Print the name of each group in the list
-group_list = data['groups']
-for group in group_list:
-    print(group['name'])
+if __name__ == '__main__':
+    app.run(debug=True)
