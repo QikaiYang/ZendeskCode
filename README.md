@@ -44,7 +44,7 @@ The app is built by React and Python. The front-end is implemented by React and 
 ### Step 3. run my app
 Open 2 terminals. 
 
-On the 1st terminal, run the command below to turn on the server(make sure it is not shut down)
+On the 1st terminal, run the command below to turn on the server (**make sure it is not shut down**)
 
     python api.py
 
